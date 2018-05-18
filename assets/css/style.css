@@ -42,18 +42,44 @@ hr {
     background-image: url("../images/stripes-light.png");
 }
 
+h1 {
+    color: #4aaaa5;
+
+}
+
+/* about area */
 .background_1 .about_area {
     background: #ffffff;
     height: 600px;
     width: 960px;
     margin: 20px auto;
-    
-    /* margin: 20px; */
+    padding: 20px;
+    text-align: left;
 }
+
+.background_1 .about_area h1{
+    padding-left: 25px;
+}
+.background_1 .about_area .profile_image {
+    width: 300px;
+    height: 300px;
+    margin: 25px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/img-1.jpg");
+    display: block;
+    float: left;
+}
+
+.background_1 .about_area .about_me {
+    margin: 25px;
+}
+
+
 
 .footer_line {
     /* position: relative; */
-    height: 20px;
+    height: 7px;
     background: #4aaaa5;
 }
 
