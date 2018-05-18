@@ -1,0 +1,65 @@
+body {
+    color: #777777;
+    text-align: center;
+    font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+header, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+}
+.navbar {
+    padding: 0 50px;
+    background: #ffffff;
+}
+
+.navbar .navbar-brand {
+    background: #4aaaa5;
+    padding: 20px;
+    color: white;
+}
+
+.nav-link {
+    padding: 0 20px;
+    border-right: 1px solid #cccccc;
+}
+
+#nav-item-last{
+    border-right: none;
+}
+
+hr {
+    /* how to change the thickness? */
+    margin:0;
+    padding:0;
+    color: #777777;
+    /* height:2px; */
+}
+
+.background_1 {
+    background: #aaaaaa;
+    border: 1px solid #dddddd;
+    height: 700px;
+    background-image: url("../images/stripes-light.png");
+}
+
+.background_1 .main_content {
+    background: #ffffff;
+    height: 600px;
+    width: 960px;
+    margin: 20px auto;
+    
+    /* margin: 20px; */
+}
+
+.footer_line {
+    /* position: relative; */
+    height: 20px;
+    background: #4aaaa5;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #666666;
+    color: #777777;
+}
