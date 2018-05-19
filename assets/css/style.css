@@ -75,6 +75,18 @@ h1 {
     margin: 25px;
 }
 
+/* contact area */
+.background_1 .contact_area {
+    background: #ffffff;
+    height: 600px;
+    width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+}
+.background_1 .contact_area form {
+    padding: 20px 0;
+}
 
 
 .footer_line {
