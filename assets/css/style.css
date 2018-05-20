@@ -36,15 +36,13 @@ hr {
 }
 
 .background_1 {
-    background: #aaaaaa;
+    width: 100%;
     border: 1px solid #dddddd;
-    height: 700px;
     background-image: url("../images/stripes-light.png");
 }
 
 h1 {
     color: #4aaaa5;
-
 }
 
 /* about area */
@@ -78,7 +76,6 @@ h1 {
 /* contact area */
 .background_1 .contact_area {
     background: #ffffff;
-    height: 600px;
     width: 960px;
     margin: 20px auto;
     padding: 20px;
@@ -88,9 +85,67 @@ h1 {
     padding: 20px 0;
 }
 
+/* portfolio area */
+.portfolio_area {
+    background: #ffffff;
+    width: 960px;
+    /* width: 500px; */
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+.portfolio_area h1 {
+    text-align: left;
+}
 
+.card_area {
+    position: relative;
+    display: inline-block;
+}
+
+.pf_thumbnail {
+    width: 350px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+}
+
+.pf_thumbnail_text {
+    position: absolute;
+    top: 150px;
+    width: 350px;
+    background: teal;
+    color: white;
+    margin: 20px;
+    display: block;
+}
+.pf_thumbnail_text:hover {
+    display: none;
+}
+
+.pf_thumbnail_1 {
+    background-image: url("../images/img-2.jpeg");
+}
+.pf_thumbnail_2 {
+    background-image: url("../images/img-3.jpeg");
+}
+.pf_thumbnail_3 {
+    background-image: url("../images/img-4.jpeg");
+}
+.pf_thumbnail_4 {
+    background-image: url("../images/img-5.png");
+}
+.pf_thumbnail_5 {
+    background-image: url("../images/img-6.jpg");
+}
+.pf_thumbnail_6 {
+    background-image: url("../images/img-7.jpeg");
+}
+
+/* footer area */
 .footer_line {
-    /* position: relative; */
     height: 7px;
     background: #4aaaa5;
 }
