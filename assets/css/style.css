@@ -1,67 +1,104 @@
+
+/* outer area */
 body {
     color: #777777;
     text-align: center;
     font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
-
+hr {
+    margin: 0;
+}
+.main_area hr {
+    height: 1px;
+    background: #eeeeee;
+}
 header, h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+    font-weight: bold;
 }
-.navbar {
-    padding: 0 50px;
-    background: #ffffff;
-}
-
-.navbar .navbar-brand {
-    background: #4aaaa5;
-    padding: 20px;
-    color: white;
-}
-
-.nav-link {
-    padding: 0 20px;
-    border-right: 1px solid #cccccc;
-}
-
-#nav-item-last{
-    border-right: none;
-}
-
-hr {
-    /* how to change the thickness? */
-    margin:0;
-    padding:0;
-    color: #777777;
-    /* height:2px; */
-}
-
-.background_1 {
-    width: 100%;
-    border: 1px solid #dddddd;
-    background-image: url("../images/stripes-light.png");
-}
-
 h1 {
     color: #4aaaa5;
+    font-size: 1.5em;
 }
-
-/* about area */
-.background_1 .about_area {
+.background_1 {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    background-image: url("../images/stripes-light.png");
+}
+.background_1 .main_area {
     background: #ffffff;
-    height: 600px;
     width: 960px;
-    margin: 20px auto;
     padding: 20px;
     text-align: left;
 }
-
-.background_1 .about_area h1{
-    padding-left: 25px;
+.container_1 {
+    margin-top: 20px;
 }
-.background_1 .about_area .profile_image {
+
+/* footer area */
+/* footer changes the position with different resolution */
+.footer_line {
+    height: 7px;
+    background: #4aaaa5;
+
+    /* this gives space between the lines */
+    width: 100%;
+    display: inline-block;
+}
+footer {
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background: #666666;
+    color: #cccccc;
+    font-size: 0.8em;
+}
+
+/* nav */
+nav {
+    background-color: #ffffff;
+    overflow: hidden;
+}
+nav a {
+  float: left;
+  color: #777777;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 10px;
+}
+nav a h4 {
+    height: 65px;
+    line-height: 65px;
+    margin: 0;
+}
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+  text-decoration: none;
+}
+nav .nav-left {
+  background: #4aaaa5;
+  color: white;
+  margin-left: 20px;
+}
+.nav-right {
+    margin: 20px;
+    float: right;
+}
+.nav-right a {
+    border-right: 1px solid #cccccc;
+}
+#nav-item-last {
+    border-right: none;
+}
+
+/* about area */
+.background_1 .main_area .profile_image {
     width: 300px;
     height: 300px;
-    margin: 25px;
+    margin: 0 20px 20px 0;
     background-position: center;
     background-size: cover;
     background-image: url("../images/img-1.jpg");
@@ -69,57 +106,37 @@ h1 {
     float: left;
 }
 
-.background_1 .about_area .about_me {
-    margin: 25px;
-}
-
 /* contact area */
-.background_1 .contact_area {
-    background: #ffffff;
-    width: 960px;
-    margin: 20px auto;
-    padding: 20px;
-    text-align: left;
-}
 .background_1 .contact_area form {
-    padding: 20px 0;
+    padding: 30px 0;
+}
+.btn-default {
+    background: #4aaaa5;
+    color: white;
 }
 
 /* portfolio area */
-.portfolio_area {
-    background: #ffffff;
-    width: 960px;
-    /* width: 500px; */
-    margin: 20px auto;
-    padding: 20px;
-    text-align: center;
-}
-.portfolio_area h1 {
-    text-align: left;
-}
-
 .card_area {
     position: relative;
     display: inline-block;
 }
-
 .pf_thumbnail {
-    width: 350px;
-    height: 200px;
+    width: 435px;
+    height: 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 20px;
+    margin: 10px;
 }
-
 .pf_thumbnail_text {
     position: absolute;
-    top: 150px;
-    width: 350px;
+    top: 250px;
+    width: 435px;
     background: teal;
     color: white;
-    margin: 20px;
+    margin: 10px;
     display: block;
+    text-align: center;
 }
 .pf_thumbnail_text:hover {
     display: none;
@@ -139,20 +156,4 @@ h1 {
 }
 .pf_thumbnail_5 {
     background-image: url("../images/img-6.jpg");
-}
-.pf_thumbnail_6 {
-    background-image: url("../images/img-7.jpeg");
-}
-
-/* footer area */
-.footer_line {
-    height: 7px;
-    background: #4aaaa5;
-}
-
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #666666;
-    color: #777777;
 }
