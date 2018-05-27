@@ -19,16 +19,17 @@ header, h1, h2, h3, h4, h5, h6 {
 h1 {
     color: #4aaaa5;
     font-size: 1.5em;
+    padding: 15px 0;
 }
 .background_1 {
     width: 100%;
     padding: 20px;
     border: 1px solid #cccccc;
     background-image: url("../images/stripes-light.png");
+    min-height: 1150px;
 }
 .background_1 .main_area {
     background: #ffffff;
-    width: 960px;
     padding: 20px;
     text-align: left;
 }
@@ -37,23 +38,22 @@ h1 {
 }
 
 /* footer area */
-/* footer changes the position with different resolution */
-.footer_line {
-    height: 7px;
-    background: #4aaaa5;
-
-    /* this gives space between the lines */
-    width: 100%;
-    display: inline-block;
-}
 footer {
     width: 100%;
     text-align: center;
-    height: 40px;
-    line-height: 40px;
+    height: 77px;
     background: #666666;
     color: #cccccc;
     font-size: 0.8em;
+}
+footer p {
+    height: 70px;
+    line-height: 70px;
+    margin: 0;
+}
+footer hr{
+    height: 7px;
+    background: #4aaaa5;
 }
 
 /* nav */
@@ -121,7 +121,6 @@ nav .nav-left {
     display: inline-block;
 }
 .pf_thumbnail {
-    width: 435px;
     height: 300px;
     background-position: center;
     background-repeat: no-repeat;
@@ -129,14 +128,19 @@ nav .nav-left {
     margin: 10px;
 }
 .pf_thumbnail_text {
-    position: absolute;
-    top: 250px;
-    width: 435px;
-    background: teal;
+    position: relative;
+    width: 100%;
+    /* top: 250px; */
+    top: -60px;
     color: white;
-    margin: 10px;
+    /* margin: 0 10px 0 20px; */
     display: block;
     text-align: center;
+}
+.pf_thumbnail_text h3 {
+    margin: 10px;
+    background: teal;
+
 }
 .pf_thumbnail_text:hover {
     display: none;
@@ -156,4 +160,33 @@ nav .nav-left {
 }
 .pf_thumbnail_5 {
     background-image: url("../images/img-6.jpg");
+}
+
+
+@media only screen and (max-width : 980px) {
+    .main_area {
+        width: 66%;
+    }
+
+@media only screen and (max-width : 768px) {
+    .main_area {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+
+    nav .nav-left {
+        margin: 0;
+    }
+    .nav-right {
+        display: inline-block;
+        margin: 15px auto 5px;
+        float: none; 
+    } 
+    .main_area #image-1 {
+        width: 100%;
+        height: 350px;
+    }
+
 }
